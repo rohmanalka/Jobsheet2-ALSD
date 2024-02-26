@@ -8,10 +8,15 @@ public class Buku21 {
         System.out.println("Jumlah Halaman: " + halaman);
         System.out.println("Sisa Stok: " + stok);
         System.out.println("Harga: Rp " + harga);
+        System.out.println("=================");
     }
 
     void terjual(int jml) {
-        stok -= jml;
+        if (stok>=jml) {
+            stok -= jml;
+        } else {
+            System.out.println("stok tidak cukup");
+        }
     }
 
     void restock(int jml) {
