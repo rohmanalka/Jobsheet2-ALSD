@@ -17,8 +17,11 @@ public class BukuMain21 {
         bk2.tampilInformasi();
 
         Buku21 bukuAlka = new Buku21("Alka Anak Polinema", "Alka", 150, 10, 40000);
-        bukuAlka.terjual(8);
         bukuAlka.gantiHarga(30000);
         bukuAlka.tampilInformasi();
+        int terjual = bukuAlka.terjual(8);
+        int hargaTotal = bukuAlka.hitungHargaTotal(terjual);
+        int diskon = bukuAlka.hitungDiskon(hargaTotal);
+        bukuAlka.hitungHargaBayar(hargaTotal, diskon);
     }
 }
