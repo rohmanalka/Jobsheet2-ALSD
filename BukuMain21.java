@@ -7,18 +7,18 @@ public class BukuMain21 {
         bk1.stok = 13;
         bk1.harga = 71000;
 
-        int jml, hrg;
-
         bk1.tampilInformasi();
-        bk1.terjual(jml=5);
-        bk1.gantiHarga(hrg=60000);
+        bk1.terjual(5);
+        bk1.gantiHarga(60000);
         bk1.tampilInformasi();
 
-        String jdl, pg;
-        int hal, stok;
-
-        Buku21 bk2 = new Buku21(jdl="Self Reward", pg="Maheera Ayesha", hal=160, stok=29, hrg=59000);
-        bk2.terjual(jml=11);
+        Buku21 bk2 = new Buku21("Self Reward", "Maheera Ayesha", 160, 29, 59000);
+        bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku21 bukuAlka = new Buku21("Alka Anak Polinema", "Alka", 150, 10, 40000);
+        bukuAlka.terjual(8);
+        bukuAlka.gantiHarga(30000);
+        bukuAlka.tampilInformasi();
     }
 }
